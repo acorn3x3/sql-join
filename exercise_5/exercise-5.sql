@@ -5,5 +5,6 @@ film.title
 FROM
 film
 LEFT JOIN film_actor on film_actor.film_id = film.film_id
-LEFT JOIN  actor on actor.actor_id = film_actor.actor_idWHERE
+LEFT JOIN  actor on actor.actor_id = film_actor.actor_id
+WHERE
 actor.last_name = 'Davis'
